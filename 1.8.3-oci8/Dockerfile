@@ -13,6 +13,7 @@ RUN mkdir -p /usr/lib/oracle/12.1/client64/lib && mkdir -p /usr/include/oracle/1
 
 ENV LD_LIBRARY_PATH /usr/lib:/usr/local/lib:/usr/lib/oracle/12.1/client64/lib
 ENV NLS_LANG THAI_THAILAND.TH8TISASCII
+ENV LANG C.UTF-8
 
 COPY instantclient-basic-linux.x64-12.1.0.2.0.zip /tmp/
 COPY instantclient-sdk-linux.x64-12.1.0.2.0.zip /tmp/
